@@ -12,31 +12,37 @@
          "patterns": ["Thanks", "Thank you", "That's helpful"],
          "responses": ["Happy to help!", "Any time!", "My pleasure"]
         },
-        {"tag": "hours",
+        {"tag": "hour",
          "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
-         "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"]
+         "responses": ["We're open every day 8am-8pm", "Our hours are 8am-8pm every day"]
         },
-        {"tag": "mopeds",
-         "patterns": ["Which mopeds do you have?", "What kinds of mopeds are there?", "What do you rent?" ],
-         "responses": ["We rent Yamaha, Piaggio and Vespa mopeds", "We have Piaggio, Vespa and Yamaha mopeds"]
+      
+        {"tag": "foods",
+         "patterns": ["What kind of food do you serve?", "What are your most popular dishes?" ],
+         "responses": ["Our menu features a range of options; you can view our full menu on our menu section of the page.", "We offer a selection of specialty cocktails crafted by our expert mixologists. Don't miss our signature drinks like Exotic Mojito."]
         },
-        {"tag": "payments",
-         "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
-         "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
+        {"tag": "payment",
+         "patterns": ["Do you take credit cards?", "Do you accept Gcash?", "Are you cash only?","Do you accept paymaya?","Do you accept Gotyme?" ],
+         "responses": ["We accept VISA", "We accept credit cards and digital wallets", "We accept Gcash","We accept PayMaya","We accept Gotyme"]
         },
         {"tag": "opentoday",
          "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
-         "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
+         "responses": ["We're open every day from 8am-8pm", "Our hours are 8am-8pm every day"]
         },
-        {"tag": "rental",
-         "patterns": ["Can we rent a moped?", "I'd like to rent a moped", "How does this work?" ],
-         "responses": ["Are you looking to rent today or later this week?"],
-         "context_set": "rentalday"
+        {"tag": "reservation",
+         "patterns": ["Can I book a table online?", "I'd like to make a reservation", "Can I make a reservation through your website" ],
+         "responses": ["Thank you for your interest! We currently operate on a first-come, first-served basis and do not accept reservations.", "We appreciate your inquiry. However, we do not take reservations. Please feel free to visit us at your convenience, and we will do our best to accommodate you." ],
+         "context_set": ""
         },
-        {"tag": "today",
-         "patterns": ["today"],
-         "responses": ["For rentals today please call 1-800-MYMOPED", "Same-day rentals please call 1-800-MYMOPED"],
-         "context_filter": "rentalday"
+        {"tag": "locate",
+         "patterns": ["Where are you located?","What is your location?","Can you tell me your address?"],
+         "responses": ["We're located at Rizal St, Iloilo City Proper, Iloilo City, 5000 Iloilo"],
+         "context_filter": ""
+        },
+        {"tag": "deliver",
+         "patterns": ["Do you offer food delivery?","Can I get my order delivered?","Is delivery available for your restaurant?"],
+         "responses": ["Thank you for your interest! Unfortunately, we do not offer delivery at this time.","We currently do not have a delivery service available. Please consider dining with us or placing a takeout order."],
+         "context_filter": ""
         }
    ]
 }
